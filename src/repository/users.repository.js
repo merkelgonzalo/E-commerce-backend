@@ -1,4 +1,4 @@
-import { CreateUserDto, GetUserDto } from "../dao/dto/user.dto.js";
+import { CreateUserDto, GetAllUsersDto } from "../dao/dto/user.dto.js";
 
 export class UserRepository{
     
@@ -7,8 +7,9 @@ export class UserRepository{
     }
 
     async getUsers(){
-        const users = await this.dao.get()
-        return users;
+        const users = await this.dao.get();
+        const usersDto = new GetAllUsersDto(users);
+        return usersDto;
     }
 
     async createUser(user){
