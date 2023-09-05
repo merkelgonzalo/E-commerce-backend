@@ -29,3 +29,13 @@ export const changeRoleController = async (req, res) => {
         res.status(500).json({ status: "error", message: error.message });
     }
 }
+
+export const deleteUsersController = async (req, res) => {
+    try {
+        const result = await userService.deleteUsers();
+        res.send({status:"success", payload: result});
+    } catch (error) {
+        req.logger.error('Cannot delete all users with mongoose: ' + error)
+        res.status(500).json({ status: "error", message: error.message });
+    }
+}

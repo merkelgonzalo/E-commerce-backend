@@ -18,7 +18,8 @@ const userSchema = new mongoose.Schema({
     role: {
         type: String,
         default: 'user'
-    }
+    },
+    last_login: Date
 });
 
 export const userModel = mongoose.model(userCollection, userSchema);

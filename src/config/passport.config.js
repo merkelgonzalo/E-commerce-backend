@@ -5,6 +5,9 @@ import { createHash, validatePassword } from '../utils/utils.js';
 import GitHubStrategy from 'passport-github2';
 import { config } from './config.js';
 import { cartService } from '../repository/index.js';
+import UserManager from '../dao/managers/UserManager.js';
+
+const userManager = new UserManager();
 
 const LocalStrategy = local.Strategy;
 
@@ -81,7 +84,10 @@ const initializePassport = () => {
                     return done(null, false);
                 }else{
                     if(!validatePassword(password,user)) return done (null, false);
-                    console.log("Todo ok")
+                    console.log("Todo ok");
+                    let login = new Date();
+                    user.last_login = login;
+                    await userManager.put(user._id, user);
                     return done(null, user);
                 }
             }

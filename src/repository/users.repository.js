@@ -33,5 +33,10 @@ export class UserRepository{
         const result = await this.dao.put(uid, user);
         return user;
     }
+
+    async deleteUsers(){
+        const result = await this.dao.delete();
+        return result;
+    }
     
 }
