@@ -417,3 +417,18 @@ Date: 5/9/2023 - Hour: 19:16:35 - Method: Login
 Date: 5/9/2023 - Hour: 19:16:43 - Method: GET all users
 Date: 5/9/2023 - Hour: 19:16:50 - Method: DELETE old users
 Date: 5/9/2023 - Hour: 19:16:54 - Method: GET all users
+Date: 6/9/2023 - Hour: 13:03:14 - Method: GET producs
+Date: 6/9/2023 - Hour: 13:08:39 - Method: Login
+Date: 6/9/2023 - Hour: 13:08:49 - Method: Register
+Date: 6/9/2023 - Hour: 13:09:34 - Method: POST a cart
+Date: 6/9/2023 - Hour: 13:09:40 - Method: Login
+Date: 6/9/2023 - Hour: 14:50:05 - Method: Login
+Date: 6/9/2023 - Hour: 14:50:16 - Method: UPDATE a user
+Date: 6/9/2023 - Hour: 14:50:18 - Method: GET producs
+Date: 6/9/2023 - Hour: 14:51:20 - Method: Login
+Date: 6/9/2023 - Hour: 15:10:58 - Method: GET all users
+Date: 6/9/2023 - Hour: 15:11:05 - Method: DELETE old users
+Date: 6/9/2023 - Hour: 15:11:42 - Method: GET all users
+Date: 6/9/2023 - Hour: 15:19:30 - Method: GET all users
+Date: 6/9/2023 - Hour: 15:19:45 - Method: DELETE old users
+Date: 6/9/2023 - Hour: 15:30:26 - Method: GET all users

@@ -12,7 +12,6 @@ const router = Router();
 
 router.post('/register', addLogger, passport.authenticate('register', {failureREdirect:'/failregister'}), async (req, res) =>{
     try {
-        console.log(req.user.email);
         const contenido = await transporter.sendMail({
             from: config.gmail.emailAdmin,
             to: req.user.email,
@@ -23,7 +22,7 @@ router.post('/register', addLogger, passport.authenticate('register', {failureRE
             <p>You can start using our services now</p>
             <a href="http://localhost:8080/"> 👉 Enjoy now </a>
             </div>`
-        })
+        });
         res.send({status:"success", message:"User registered"});
     }catch{
 
