@@ -1,4 +1,4 @@
-import { productService } from "../repository/index.js"
+import { productService, userService } from "../repository/index.js"
 import { cartService } from "../repository/index.js";
 import ManagerAccess from '../dao/managers/ManagerAccess.js';
 
@@ -106,4 +106,60 @@ export const resetPasswordController = async (req, res) => {
     await managerAccess.saveLog('Reset password');
     const token = req.query.token;
     res.render('resetPassword', {token});
+}
+
+export const usersAdministrationController = async (req, res) => {
+    try {
+        await managerAccess.saveLog('Users administration');
+
+        const limit = parseInt(req.query.limit) || 10;
+        const sort = parseInt(req.query.sort) || 0;
+        const page = parseInt(req.query.page) || 1;
+        const queryParam = req.query.query || null;
+
+        const query = {};
+
+        if (queryParam !== null) {
+            query["$or"] = [
+                { category: { $regex: queryParam, $options: "i" } },
+                {
+                    status: ["true", "false"].includes(queryParam.toLowerCase())
+                        ? JSON.parse(queryParam.toLowerCase())
+                        : undefined,
+                },
+            ];
+        }
+
+        const options = {
+            limit,
+            page,
+            lean: true
+        };
+
+        if (sort !== 0) {
+            options.sort = { price: sort };
+        }
+
+        const result = await userService.getUsers();
+        
+        res.render('usersAdministration', { 
+            users: result.docs,
+            total: result.total,
+            page: result.page,
+            totalPages: result.totalPages,
+            hasPrevPage: result.hasPrevPage,
+            prevPage: result.prevPage,
+            prevLink: result.prevLink,
+            hasNextPage: result.hasNextPage,
+            nextPage: result.nextPage,
+            nextLink: result.nextLink,
+            limit,
+            sort,
+            queryParam,
+            user: req.session.user
+        });
+    } catch (error) {
+        req.logger.error('Cannot get users view with mongoose: '+error);
+        res.status(500).json({ status: "error", message: error.message });
+    }
 }

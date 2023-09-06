@@ -11,10 +11,10 @@ export default class UserManager{
         this.model = userModel;
     }
 
-    async get(){
+    async get(query, options){
         try {
             await managerAccess.saveLog('GET all users');
-            const result = await this.model.find();
+            const result = await this.model.paginate(query, options);
             return result;
         } catch (error) {
             console.log('Cannot get users in manager with mongoose: '+error)

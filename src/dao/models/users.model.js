@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import mongoosePaginate from 'mongoose-paginate-v2';
 
 const userCollection = 'users';
 
@@ -21,5 +22,7 @@ const userSchema = new mongoose.Schema({
     },
     last_login: Date
 });
+
+userSchema.plugin(mongoosePaginate);
 
 export const userModel = mongoose.model(userCollection, userSchema);

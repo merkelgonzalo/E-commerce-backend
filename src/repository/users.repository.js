@@ -6,10 +6,11 @@ export class UserRepository{
         this.dao = dao;
     }
 
-    async getUsers(){
-        const users = await this.dao.get();
-        const usersDto = new GetAllUsersDto(users);
-        return usersDto;
+    async getUsers(query, options){
+        const users = await this.dao.get(query, options);
+        const usersDto = new GetAllUsersDto(users.docs);
+        users.docs = usersDto;
+        return users;
     }
 
     async createUser(user){

@@ -432,3 +432,37 @@ Date: 6/9/2023 - Hour: 15:11:42 - Method: GET all users
 Date: 6/9/2023 - Hour: 15:19:30 - Method: GET all users
 Date: 6/9/2023 - Hour: 15:19:45 - Method: DELETE old users
 Date: 6/9/2023 - Hour: 15:30:26 - Method: GET all users
+Date: 6/9/2023 - Hour: 16:03:23 - Method: Register
+Date: 6/9/2023 - Hour: 16:04:02 - Method: GET producs
+Date: 6/9/2023 - Hour: 16:04:17 - Method: Users administration
+Date: 6/9/2023 - Hour: 16:04:17 - Method: GET all users
+Date: 6/9/2023 - Hour: 16:04:26 - Method: Login
+Date: 6/9/2023 - Hour: 16:04:55 - Method: GET producs
+Date: 6/9/2023 - Hour: 16:04:58 - Method: Login
+Date: 6/9/2023 - Hour: 16:05:16 - Method: Register
+Date: 6/9/2023 - Hour: 16:06:24 - Method: POST a cart
+Date: 6/9/2023 - Hour: 16:06:27 - Method: Login
+Date: 6/9/2023 - Hour: 16:06:47 - Method: GET producs
+Date: 6/9/2023 - Hour: 16:06:57 - Method: Users administration
+Date: 6/9/2023 - Hour: 16:06:57 - Method: GET all users
+Date: 6/9/2023 - Hour: 16:07:44 - Method: Users administration
+Date: 6/9/2023 - Hour: 16:07:44 - Method: GET all users
+Date: 6/9/2023 - Hour: 16:07:59 - Method: GET producs
+Date: 6/9/2023 - Hour: 16:08:08 - Method: Users administration
+Date: 6/9/2023 - Hour: 16:08:08 - Method: GET all users
+Date: 6/9/2023 - Hour: 16:10:58 - Method: GET producs
+Date: 6/9/2023 - Hour: 16:11:07 - Method: Users administration
+Date: 6/9/2023 - Hour: 16:11:07 - Method: GET all users
+Date: 6/9/2023 - Hour: 16:11:23 - Method: Users administration
+Date: 6/9/2023 - Hour: 16:11:23 - Method: GET all users
+Date: 6/9/2023 - Hour: 16:15:09 - Method: Users administration
+Date: 6/9/2023 - Hour: 16:15:09 - Method: GET all users
+Date: 6/9/2023 - Hour: 16:15:10 - Method: Users administration
+Date: 6/9/2023 - Hour: 16:15:10 - Method: GET all users
+Date: 6/9/2023 - Hour: 16:17:31 - Method: Users administration
+Date: 6/9/2023 - Hour: 16:17:31 - Method: GET all users
+Date: 6/9/2023 - Hour: 16:20:08 - Method: Users administration
+Date: 6/9/2023 - Hour: 16:20:08 - Method: GET all users
+Date: 6/9/2023 - Hour: 16:20:16 - Method: GET all users
+Date: 6/9/2023 - Hour: 16:22:57 - Method: Users administration
+Date: 6/9/2023 - Hour: 16:22:57 - Method: GET all users
