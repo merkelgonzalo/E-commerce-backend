@@ -39,3 +39,14 @@ export const deleteUsersController = async (req, res) => {
         res.status(500).json({ status: "error", message: error.message });
     }
 }
+
+export const deleteUserController = async (req, res) => {
+    try {
+        const uid = req.params.uid;
+        const result = await userService.deleteUser(uid);
+        res.send({status:"success", payload: result});
+    } catch (error) {
+        req.logger.error('Cannot delete the user with mongoose: ' + error)
+        res.status(500).json({ status: "error", message: error.message });
+    }
+}

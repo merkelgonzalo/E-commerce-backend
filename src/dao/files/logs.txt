@@ -507,3 +507,72 @@ Date: 11/9/2023 - Hour: 17:19:28 - Method: Login
 Date: 11/9/2023 - Hour: 17:21:24 - Method: GET producs
 Date: 11/9/2023 - Hour: 17:21:32 - Method: Login
 Date: 11/9/2023 - Hour: 17:21:36 - Method: GET producs
+Date: 11/9/2023 - Hour: 18:00:01 - Method: GET producs
+Date: 11/9/2023 - Hour: 18:00:07 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:00:07 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:01:21 - Method: GET a user by ID
+Date: 11/9/2023 - Hour: 18:01:21 - Method: UPDATE a user
+Date: 11/9/2023 - Hour: 18:01:44 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:01:44 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:01:57 - Method: GET a user by ID
+Date: 11/9/2023 - Hour: 18:01:57 - Method: UPDATE a user
+Date: 11/9/2023 - Hour: 18:02:06 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:02:06 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:02:18 - Method: GET a user by ID
+Date: 11/9/2023 - Hour: 18:02:18 - Method: UPDATE a user
+Date: 11/9/2023 - Hour: 18:02:30 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:02:30 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:03:26 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:03:26 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:03:30 - Method: GET a user by ID
+Date: 11/9/2023 - Hour: 18:03:30 - Method: UPDATE a user
+Date: 11/9/2023 - Hour: 18:03:33 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:03:33 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:05:35 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:05:35 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:06:40 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:06:40 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:06:45 - Method: DELETE a user
+Date: 11/9/2023 - Hour: 18:06:59 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:06:59 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:10:19 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:10:19 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:10:23 - Method: DELETE a user
+Date: 11/9/2023 - Hour: 18:10:28 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:10:28 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:10:56 - Method: DELETE a user
+Date: 11/9/2023 - Hour: 18:11:03 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:11:03 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:12:37 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:14:05 - Method: DELETE a user
+Date: 11/9/2023 - Hour: 18:14:16 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:14:16 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:20:16 - Method: DELETE a user
+Date: 11/9/2023 - Hour: 18:20:42 - Method: DELETE a user
+Date: 11/9/2023 - Hour: 18:21:12 - Method: DELETE a user
+Date: 11/9/2023 - Hour: 18:23:49 - Method: DELETE a user
+Date: 11/9/2023 - Hour: 18:24:32 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:24:32 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:24:38 - Method: Login
+Date: 11/9/2023 - Hour: 18:24:44 - Method: Register
+Date: 11/9/2023 - Hour: 18:25:09 - Method: POST a cart
+Date: 11/9/2023 - Hour: 18:25:13 - Method: Login
+Date: 11/9/2023 - Hour: 18:25:35 - Method: UPDATE a user
+Date: 11/9/2023 - Hour: 18:25:36 - Method: GET producs
+Date: 11/9/2023 - Hour: 18:25:48 - Method: Login
+Date: 11/9/2023 - Hour: 18:25:51 - Method: GET producs
+Date: 11/9/2023 - Hour: 18:25:56 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:25:56 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:26:05 - Method: DELETE a user
+Date: 11/9/2023 - Hour: 18:26:09 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:26:09 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:28:37 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:28:37 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:29:21 - Method: GET a user by ID
+Date: 11/9/2023 - Hour: 18:29:22 - Method: UPDATE a user
+Date: 11/9/2023 - Hour: 18:29:23 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:29:23 - Method: GET all users
+Date: 11/9/2023 - Hour: 18:29:27 - Method: GET a user by ID
+Date: 11/9/2023 - Hour: 18:29:27 - Method: UPDATE a user
+Date: 11/9/2023 - Hour: 18:29:28 - Method: Users administration
+Date: 11/9/2023 - Hour: 18:29:28 - Method: GET all users

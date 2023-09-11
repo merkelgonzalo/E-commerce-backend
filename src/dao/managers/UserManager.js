@@ -96,4 +96,15 @@ export default class UserManager{
             console.log('Cannot delete old users in manager with mongoose: '+error);
         }
     }
+
+    async deleteById(uId){
+        try{
+            await managerAccess.saveLog('DELETE a user');
+            let result = await this.model.findByIdAndDelete(uId);
+            return result;
+        }catch(error){
+            console.log('Cannot delete the user in manager with mongoose: '+error);
+        }
+    }
+
 }
