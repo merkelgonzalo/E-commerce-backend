@@ -19,7 +19,8 @@ export class GetAllUsersDto{
             return {
                 name: user.first_name + " " + user.last_name,
                 email: user.email,
-                role: user.role
+                role: user.role,
+                _id: user._id
             };
         });
         return transformedUsers;

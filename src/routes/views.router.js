@@ -22,6 +22,6 @@ router.get('/forgot-password', forgotPasswordController);
 
 router.get("/reset-password", resetPasswordController);
 
-router.get("/users-administration", usersAdministrationController);
+router.get("/users-administration", autorization, usersAdministrationController);
 
 export default router;

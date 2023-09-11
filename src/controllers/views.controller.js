@@ -141,7 +141,7 @@ export const usersAdministrationController = async (req, res) => {
         }
 
         const result = await userService.getUsers();
-        
+
         res.render('usersAdministration', { 
             users: result.docs,
             total: result.total,

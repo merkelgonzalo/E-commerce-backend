@@ -16,20 +16,22 @@
             <th>Name</th>
             <th>Email</th>
             <th>Role</th>
+            <th>ID</th>
+            <th>Options</th>
         </thead>
         <tbody>
-
             {{#each users}}
             <tr>
                 <td>{{this.name}}</td>
                 <td>{{this.email}}</td>
                 <td>{{this.role}}</td>
+                <td>{{this._id}}</td>
+                <td>
+                    <button data-user-id="{{this._id}}">Change Role</button>
+                </td>
             </tr>
             {{/each}}
-
-
         </tbody>
-
     </table>
 
 </div>
