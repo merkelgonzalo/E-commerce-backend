@@ -576,3 +576,42 @@ Date: 11/9/2023 - Hour: 18:29:27 - Method: GET a user by ID
 Date: 11/9/2023 - Hour: 18:29:27 - Method: UPDATE a user
 Date: 11/9/2023 - Hour: 18:29:28 - Method: Users administration
 Date: 11/9/2023 - Hour: 18:29:28 - Method: GET all users
+Date: 12/9/2023 - Hour: 21:02:14 - Method: GET producs
+Date: 12/9/2023 - Hour: 21:03:05 - Method: GET producs
+Date: 13/9/2023 - Hour: 19:58:55 - Method: GET all users
+Date: 13/9/2023 - Hour: 19:59:13 - Method: GET producs
+Date: 13/9/2023 - Hour: 19:59:15 - Method: Register
+Date: 13/9/2023 - Hour: 19:59:37 - Method: POST a cart
+Date: 13/9/2023 - Hour: 19:59:42 - Method: Login
+Date: 13/9/2023 - Hour: 19:59:54 - Method: UPDATE a user
+Date: 13/9/2023 - Hour: 19:59:55 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:00:06 - Method: GET all users
+Date: 13/9/2023 - Hour: 20:00:51 - Method: POST a product
+Date: 13/9/2023 - Hour: 20:01:00 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:01:03 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:01:05 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:01:07 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:01:08 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:01:09 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:01:10 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:01:11 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:01:12 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:01:13 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:01:39 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:02:27 - Method: POST a product
+Date: 13/9/2023 - Hour: 20:04:55 - Method: POST a product
+Date: 13/9/2023 - Hour: 20:07:41 - Method: POST a product
+Date: 13/9/2023 - Hour: 20:11:57 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:12:52 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:12:55 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:12:57 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:12:58 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:12:59 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:13:00 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:13:02 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:13:03 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:13:05 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:13:06 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:13:24 - Method: DELETE a product
+Date: 13/9/2023 - Hour: 20:13:30 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:13:42 - Method: POST a product

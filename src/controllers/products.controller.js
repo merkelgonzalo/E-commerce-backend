@@ -69,8 +69,8 @@ export const getProductController = async (req, res) => {
 
 export const createProductController = async (req, res) => {
     try {
-        let productBody = req.body;
-        if(!productBody.title || !productBody.price || !productBody.category){
+        let {title, description, price, thumbnail, code, stock, category, status, owner} = req.body;
+        if(!title || !price || !category || !owner){
             errorService.customError({
                 name: "Product create error",
                 cause: errorService.generateProductErrorInfo(req.body),
@@ -78,7 +78,7 @@ export const createProductController = async (req, res) => {
                 errorCode: EError.INVALID_JSON
             });
         }else{
-            let result = await productService.addProduct(productBody);
+            let result = await productService.addProduct(req.body);
             res.send({
                 status: 'success',
                 payload: result

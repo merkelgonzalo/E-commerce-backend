@@ -1,6 +1,7 @@
 import { productModel } from '../models/products.model.js';
 import ManagerAccess from './ManagerAccess.js';
 import mongoose from 'mongoose';
+import { v4 as uuidv4 } from 'uuid';
 
 const managerAccess = new ManagerAccess();
 const ObjectId = mongoose.Types.ObjectId;
@@ -14,16 +15,17 @@ export default class ProductManager{
     post = async (productBody) => {
         try{
             await managerAccess.saveLog('POST a product');
-            let {title, description, price, thumbnail, code, stock, category} = productBody;
+            let {title, description, price, thumbnail, stock, category, status, owner} = productBody;
             let result = await this.model.create({
                 title,
                 description,
                 price,
                 thumbnail,
-                code,
+                code: uuidv4().substring(0, 10),
                 stock,
                 category,
-                status: true
+                status: true,
+                owner
             });
             
             return result;

@@ -5,16 +5,16 @@ import { addLogger } from '../utils/logger.js';
 
 const router = Router();
 
-router.get('/', addLogger, getProductsController);
+router.get('/', getProductsController);
 
-router.get('/:pid', addLogger, getProductController);
+router.get('/:pid', getProductController);
 
 //DESCOMENTAR PARA AUTORIZACION ADMIN
 
-router.post('/', /*autorization,*/ addLogger, createProductController);
+router.post('/', /*autorization,*/ createProductController);
 
-router.put('/:pid', /*autorization,*/ addLogger, updateProductController);
+router.put('/:pid', /*autorization,*/ updateProductController);
 
-router.delete('/:pid', /*autorization,*/ addLogger, deleteProductController);
+router.delete('/:pid', /*autorization,*/ deleteProductController);
 
 export default router;

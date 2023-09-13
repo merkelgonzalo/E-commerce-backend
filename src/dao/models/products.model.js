@@ -19,14 +19,18 @@ const productSchema = new mongoose.Schema({
     code: {
         type: String,
         unique: true,
-        default: uuidv4()
+        default: uuidv4().substring(0, 10)
     },
     stock: Number,
     category: {
         type: String,
         require: true
     },
-    status: Boolean
+    status: Boolean,
+    owner: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref:"users"
+    }
 });
 
 productSchema.plugin(mongoosePaginate);
