@@ -1,4 +1,9 @@
 //import { CreateUserDto, GetUserDto } from "../dao/dto/user.dto.js"; HACER QUE EL TITULO SE ESCRIBA LA PRIMERA EN MAYUS Y LUEGO EN MINUS
+import { config } from '../config/config.js';
+import { transporter } from "../utils/email.js";
+import UserManager from '../dao/managers/UserManager.js';
+
+const userManager = new UserManager();
 
 export class ProductRepository{
     
@@ -29,6 +34,26 @@ export class ProductRepository{
     
     async deleteProductById(pid){
         const result = await this.dao.delete(pid);
+        try{
+            const owner = await userManager.getById(result.owner);
+            if(owner.role === "premium"){
+                const emailOwner = owner.email;
+                const content = await transporter.sendMail({
+                    from: config.gmail.emailAdmin,
+                    to: emailOwner,
+                    subject: "⚠️Your product has been removed🚮",
+                    html: `<div>
+                    <h1>Your product has been removed</h1>
+                    <img src="https://i.pinimg.com/550x/bd/a8/db/bda8db8694801d590217439017bdff26.jpg" style="width:250px"/>
+                    <p>If you have any questions, contact the site administrator</p>
+                    </div>`
+                });
+            }
+        }catch{
+            req.logger.error('Cannot send email to owner of product: '+error);
+            res.status(500).json({ status: "error", message: error.message });
+        }
+        
         return result;
     }
 

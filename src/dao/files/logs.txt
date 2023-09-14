@@ -615,3 +615,38 @@ Date: 13/9/2023 - Hour: 20:13:06 - Method: GET producs
 Date: 13/9/2023 - Hour: 20:13:24 - Method: DELETE a product
 Date: 13/9/2023 - Hour: 20:13:30 - Method: GET producs
 Date: 13/9/2023 - Hour: 20:13:42 - Method: POST a product
+Date: 13/9/2023 - Hour: 20:48:23 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:52:03 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:52:13 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:52:21 - Method: GET producs
+Date: 13/9/2023 - Hour: 20:52:46 - Method: DELETE a product
+Date: 13/9/2023 - Hour: 20:52:47 - Method: GET a user by ID
+Date: 13/9/2023 - Hour: 20:54:12 - Method: DELETE a product
+Date: 13/9/2023 - Hour: 20:54:53 - Method: DELETE a product
+Date: 13/9/2023 - Hour: 20:55:15 - Method: DELETE a product
+Date: 13/9/2023 - Hour: 20:55:32 - Method: DELETE a product
+Date: 13/9/2023 - Hour: 20:55:47 - Method: GET producs
+Date: 13/9/2023 - Hour: 21:03:07 - Method: POST a product
+Date: 13/9/2023 - Hour: 21:03:15 - Method: DELETE a product
+Date: 13/9/2023 - Hour: 21:03:40 - Method: DELETE a product
+Date: 13/9/2023 - Hour: 21:03:40 - Method: GET a user by ID
+Date: 13/9/2023 - Hour: 21:06:23 - Method: GET producs
+Date: 13/9/2023 - Hour: 21:06:40 - Method: POST a product
+Date: 13/9/2023 - Hour: 21:06:52 - Method: GET producs
+Date: 13/9/2023 - Hour: 21:10:00 - Method: DELETE a product
+Date: 13/9/2023 - Hour: 21:10:01 - Method: GET a user by ID
+Date: 13/9/2023 - Hour: 21:10:28 - Method: GET producs
+Date: 13/9/2023 - Hour: 21:10:36 - Method: POST a product
+Date: 13/9/2023 - Hour: 21:10:43 - Method: DELETE a product
+Date: 13/9/2023 - Hour: 21:10:43 - Method: GET a user by ID
+Date: 13/9/2023 - Hour: 21:12:37 - Method: GET all users
+Date: 13/9/2023 - Hour: 21:12:46 - Method: POST a product
+Date: 13/9/2023 - Hour: 21:13:23 - Method: POST a product
+Date: 13/9/2023 - Hour: 21:13:38 - Method: DELETE a product
+Date: 13/9/2023 - Hour: 21:13:38 - Method: GET a user by ID
+Date: 13/9/2023 - Hour: 21:14:13 - Method: GET producs
+Date: 13/9/2023 - Hour: 21:14:22 - Method: DELETE a product
+Date: 13/9/2023 - Hour: 21:14:22 - Method: GET a user by ID
+Date: 13/9/2023 - Hour: 21:15:06 - Method: POST a product
+Date: 13/9/2023 - Hour: 21:15:32 - Method: DELETE a product
+Date: 13/9/2023 - Hour: 21:15:32 - Method: GET a user by ID
