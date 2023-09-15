@@ -14,22 +14,22 @@ import { addLogger } from '../utils/logger.js';
 
 const router = Router();
 
-router.get('/', addLogger, getCartsController);
+router.get('/', getCartsController);
 
-router.get('/:cid', addLogger, getCartController);
+router.get('/:cid', getCartController);
 
-router.post('/', addLogger, createCartController);
+router.post('/', createCartController);
 
-router.post('/:cid/product/:pid', addLogger, addProductController);
+router.post('/:cid/product/:pid', addProductController);
 
-router.delete('/:cid/products/:pid', addLogger, deleteProductController);
+router.delete('/:cid/products/:pid', deleteProductController);
 
-router.delete('/:cid', addLogger, deleteProductsController);
+router.delete('/:cid', deleteProductsController);
 
-router.put('/:cid', addLogger, updateProductsController);
+router.put('/:cid', updateProductsController);
 
-router.put('/:cid/products/:pid', addLogger, updateProductController);
+router.put('/:cid/products/:pid', updateProductController);
 
-router.post('/:cid/purchase', addLogger, buyCartController);
+router.post('/:cid/purchase', buyCartController);
 
 export default router;

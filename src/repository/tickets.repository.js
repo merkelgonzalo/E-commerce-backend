@@ -18,4 +18,10 @@ export class TicketRepository{
         const result = await this.dao.put(cart._id);
         return result;
     }
+
+    async getById(tid){
+        const result = await this.dao.getById(tid);
+        return result;
+    }
+
 }

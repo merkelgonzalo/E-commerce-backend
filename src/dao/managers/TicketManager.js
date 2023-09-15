@@ -44,4 +44,14 @@ export default class TicketManager{
         }
     }
 
+    getById = async(tid) => {   
+        try{
+            await managerAccess.saveLog('GET ticket');
+            const result = await this.model.findById(tid);
+            return result;
+        }catch(error){
+            console.log('Cannot get ticket in manager with mongoose: '+error)
+        }
+    }
+
 }

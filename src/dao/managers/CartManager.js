@@ -179,7 +179,6 @@ export default class CartManager {
             }
             result[0] = amount;
             let cartModified = await this.put(cid, productsOutOfStock);
-            console.log(cartModified);
             return result;
         } catch (error) {
             console.log('Cannot buy cart in manager with mongoose: ' + error)

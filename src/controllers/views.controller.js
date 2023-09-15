@@ -1,4 +1,4 @@
-import { productService, userService } from "../repository/index.js"
+import { productService, ticketService, userService } from "../repository/index.js"
 import { cartService } from "../repository/index.js";
 import ManagerAccess from '../dao/managers/ManagerAccess.js';
 
@@ -161,5 +161,27 @@ export const usersAdministrationController = async (req, res) => {
     } catch (error) {
         req.logger.error('Cannot get users view with mongoose: '+error);
         res.status(500).json({ status: "error", message: error.message });
+    }
+}
+
+export const getTicketController = async (req, res) => {
+    try {
+        const result = await ticketService.getById(req.params.tid);
+        if (result.length === 0) {
+            errorService.customError({
+                name: "Ticket ID error",
+                cause: errorService.generateCartErrorParam(tid),
+                message:"Error when try to find the ticket by id",
+                errorCode: EError.INVALID_PARAM
+            });
+        }
+        res.render('ticket', {
+            ticketId: result._id,
+            ticketCode: result.code,
+            ticketAmount: result.amount
+        });
+    } catch (error) {
+        req.logger.error('Cannot get ticket with mongoose: ' + error)
+        res.status(400).json({ message: error });
     }
 }

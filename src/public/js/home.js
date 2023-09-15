@@ -111,9 +111,11 @@ buyButton.addEventListener('click', e =>{
         headers: {
           'Content-Type': 'application/json'
         }
-      }).then(result=>{
+      }).then(async result=>{
         if(result.status == 200){
-          window.location.replace(`/carts/${cartId}`);
+          const data = await result.json();
+          const ticketId = data.payload._id;
+          window.location.replace(`/tickets/${ticketId}`);
         }
       });
     } catch (error) {
@@ -145,7 +147,7 @@ socket.on('messageLogs', data =>{
     let messages = "";
 
     data.forEach(message => {
-        messages +=  `${ message.userMail } dice: ${ message.message } <br/>  `       
+        messages +=  `${ message.userMail } says: ${ message.message } <br/>  `       
     });
     log.innerHTML = messages
 
@@ -158,7 +160,7 @@ socket.on('newUserConnected', data =>{
         position: 'top-end',
         showConfirmButton: false,
         timer: 3000,
-        title: `${data} se ha unido al chat`,
+        title: `${data} has joined the chat`,
         icon: "success"
     })
 })

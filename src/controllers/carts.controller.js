@@ -182,6 +182,7 @@ export const buyCartController = async (req, res) => {
         //VER
         // if (result === []) return res.status(400).json({ status: "error", error: "ID NOT FOUND" });
         // if (result === []) return res.status(400).json({ status: "error", error: "OUT OF STOCK" });
+        console.log(result)
         res.send({ result: "success", payload: result });
     } catch (error) {
         req.logger.error('Cannot buy cart with mongoose: ' + error)

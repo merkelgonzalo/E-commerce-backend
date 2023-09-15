@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import { getCartController, getProductsController, registerController, loginController, forgotPasswordController, resetPasswordController, usersAdministrationController } from '../controllers/views.controller.js';
+import { getTicketController, getCartController, getProductsController, registerController, loginController, forgotPasswordController, resetPasswordController, usersAdministrationController } from '../controllers/views.controller.js';
 import { autorization } from '../middlewares/autorization.js';
 import { addLogger } from '../utils/logger.js';
 
@@ -13,6 +13,8 @@ router.get('/', getProductsController);
 // });
 
 router.get('/carts/:cid', getCartController);
+
+router.get('/tickets/:tid', getTicketController);
 
 router.get('/register', registerController);
 
