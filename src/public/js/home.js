@@ -123,6 +123,28 @@ buyButton.addEventListener('click', e =>{
     }
 });
 
+const cartButton = document.getElementById("cartButton");
+
+cartButton.addEventListener('click', e =>{
+    e.preventDefault();
+
+    try {
+      // Enviar una solicitud POST al servidor para finalizar la compra
+      fetch(`/api/carts/${cartId}`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }).then(async result=>{
+        if(result.status == 200){
+          window.location.replace(`/carts/${cartId}`);
+        }
+      });
+    } catch (error) {
+      console.log('Error:', error);
+    }
+});
+
 const socket = io();
 const userElement = document.getElementById('userEmail');
 const userMail = userElement.innerText;
