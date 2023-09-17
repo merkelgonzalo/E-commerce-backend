@@ -7,7 +7,7 @@ const ticketSchema = new mongoose.Schema({
     code: {
         type: String,
         unique: true,
-        default: uuidv4()
+        default: uuidv4().substring(0, 10)
     },
     purchase_datetime: {
         type: Date,

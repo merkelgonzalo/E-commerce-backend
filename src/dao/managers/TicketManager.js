@@ -15,7 +15,8 @@ export default class TicketManager{
             await managerAccess.saveLog('POST a ticket');
             let result = await this.model.create({
                 amount,
-                purchaser
+                purchaser,
+                code: uuidv4().substring(0, 10)
             });
             return result;
         }catch(error){
@@ -36,7 +37,7 @@ export default class TicketManager{
     put = async (cartId) => {
         try{
             await managerAccess.saveLog('PUT a ticket');
-            let newCode = uuidv4();
+            let newCode = uuidv4().substring(0, 10);
             let result = await this.model.updateOne({_id:cartId}, {$set: {code: newCode}});
             return result;
         }catch(error){

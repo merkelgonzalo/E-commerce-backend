@@ -49,7 +49,7 @@ export const getProductController = async (req, res) => {
     try {
         const productId = req.params.pid;
         const result = await productService.getProductById(productId);
-        if(result === undefined){ //res.status(400).json({status:"error", error: "ID NOT FOUND"});
+        if(result === undefined || result.length == 0){ //res.status(400).json({status:"error", error: "ID NOT FOUND"});
             errorService.customError({
                 name: "Product ID error",
                 cause: errorService.generateProductErrorParam(productId),
@@ -62,7 +62,7 @@ export const getProductController = async (req, res) => {
             payload: result
         });
     } catch (error) {
-        req.logger.fatal('Cannot get the product with mongoose: '+error);
+        req.logger.error('Cannot get the product with mongoose: '+error);
         res.status(400).json({ message: error });
     }
 }
@@ -104,7 +104,7 @@ export const updateProductController = async (req, res) => {
             });
         }else{
             let result = await productService.updateProduct(idProduct, product);
-            if(result.matchedCount === 0) {
+            if(result === undefined || result.matchedCount === 0) {
                 errorService.customError({
                     name: "Product update error",
                     cause: errorService.generateProductErrorParam(idProduct),
@@ -124,7 +124,7 @@ export const deleteProductController = async (req, res) => {
     try {
         const idProduct = req.params.pid;
         let result = await productService.deleteProductById(idProduct);
-        if(result === null) {
+        if(result === null || result === undefined) {
             errorService.customError({
                 name: "Product delete error",
                 cause: errorService.generateProductErrorParam(idProduct),
