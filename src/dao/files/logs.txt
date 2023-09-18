@@ -1393,3 +1393,14 @@ Date: 17/9/2023 - Hour: 21:01:35 - Method: POST a cart
 Date: 17/9/2023 - Hour: 21:01:35 - Method: UPDATE a user
 Date: 17/9/2023 - Hour: 21:01:36 - Method: GET ticket
 Date: 17/9/2023 - Hour: 21:01:59 - Method: GET producs
+Date: 17/9/2023 - Hour: 22:20:07 - Method: GET producs
+Date: 17/9/2023 - Hour: 22:20:09 - Method: Login
+Date: 17/9/2023 - Hour: 22:20:12 - Method: UPDATE a user
+Date: 17/9/2023 - Hour: 22:20:15 - Method: GET producs
+Date: 17/9/2023 - Hour: 22:20:19 - Method: Login
+Date: 17/9/2023 - Hour: 22:20:24 - Method: Register
+Date: 17/9/2023 - Hour: 22:20:36 - Method: POST a cart
+Date: 17/9/2023 - Hour: 22:20:38 - Method: GET producs
+Date: 17/9/2023 - Hour: 22:25:01 - Method: Login
+Date: 17/9/2023 - Hour: 22:25:07 - Method: UPDATE a user
+Date: 17/9/2023 - Hour: 22:25:09 - Method: GET producs

@@ -119,8 +119,14 @@ const initializePassport = () => {
                             role: 'user' 
                     }
                     const result = await userModel.create(newUser);
+                    let login = new Date();
+                    user.last_login = login;
+                    await userManager.put(user._id, user);
                     done(null, result);
                 }else{
+                    let login = new Date();
+                    user.last_login = login;
+                    await userManager.put(user._id, user);
                     done(null, user);
                 }
             } catch (error) {
