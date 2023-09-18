@@ -49,8 +49,6 @@ export const createCartController = async (req, res) => {
 
 export const addProductController = async (req, res) => {
     try {
-        console.log("cart " + req.params.cid);
-        console.log("product " + req.params.pid);
         if (!ObjectId.isValid(req.params.cid) || !ObjectId.isValid(req.params.pid)) {
             errorService.customError({
                 name: "Cart or Product ID error",
@@ -178,11 +176,8 @@ export const updateProductController = async (req, res) => {
 export const buyCartController = async (req, res) => {
     try {
         let cartId = req.params.cid;
-        let result = await cartService.buyCart(cartId);
-        //VER
-        // if (result === []) return res.status(400).json({ status: "error", error: "ID NOT FOUND" });
-        // if (result === []) return res.status(400).json({ status: "error", error: "OUT OF STOCK" });
-        console.log(result)
+        let user = req.session.user;
+        let result = await cartService.buyCart(cartId, user);
         res.send({ result: "success", payload: result });
     } catch (error) {
         req.logger.error('Cannot buy cart with mongoose: ' + error)

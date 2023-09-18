@@ -34,10 +34,22 @@ export default class UserManager{
     async getByCart(cid){
         try {
             await managerAccess.saveLog('GET a user by cart');
-            const result = await this.model.findOne({cart: cid})
+            const result = await this.model.findOne({cart: cid});
             return result;
         } catch (error) {
             console.log('Cannot get user by cart ID in manager with mongoose: '+error)
+        }
+    }
+
+    async getByEmail(email){
+        try {
+            console.log(email);
+            await managerAccess.saveLog('GET a user by email');
+            const result = await this.model.findOne({email: email});
+            console.log(result);
+            return result;
+        } catch (error) {
+            console.log('Cannot get user by email in manager with mongoose: '+error)
         }
     }
 

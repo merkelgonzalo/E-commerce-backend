@@ -30,9 +30,19 @@ export class UserRepository{
         return user;
     }
 
+    async getByCart(cid){
+        const user = await this.dao.getByCart(cid);
+        return user;
+    }
+
+    async getByEmail(email){
+        const user = await this.dao.getByEmail(email);
+        return user;
+    }
+
     async update(uid, user){
         const result = await this.dao.put(uid, user);
-        return user;
+        return result;
     }
 
     async deleteUsers(){

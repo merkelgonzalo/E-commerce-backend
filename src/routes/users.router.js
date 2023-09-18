@@ -1,5 +1,4 @@
 import { Router } from 'express';
-import passport from 'passport';
 import { changeRoleController, deleteUsersController, getUsersController, deleteUserController } from '../controllers/users.controller.js';
 import { autorization } from '../middlewares/autorization.js';
 

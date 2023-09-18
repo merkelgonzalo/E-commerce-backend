@@ -51,12 +51,17 @@ export class CartRepository{
         return result;
     }
 
-    async buyCart(cid){
-        let amount = await this.dao.buy(cid);
-        amount = amount[0];
-        const purchaser = await this.userService.getMailByCart(cid);
+    async buyCart(cid, reqUser){
+        const resultManager = await this.dao.buy(cid);
+        const amount = resultManager[0];
+        const user = await this.userService.getByEmail(reqUser.email);
+        const purchaser = user.email;
         const result = await this.ticketService.add(amount, purchaser);
-        await this.ticketService.updateCode(result)
+        await this.ticketService.updateCode(result);
+        if(resultManager[1] === true){
+            user.cart = await this.dao.post();
+            await this.userService.update(user._id, user);
+        }
         return result;
     }
 

@@ -178,7 +178,12 @@ export default class CartManager {
                 });
             }
             result[0] = amount;
-            let cartModified = await this.put(cid, productsOutOfStock);
+            await this.put(cid, productsOutOfStock);
+            if(productsOutOfStock.length == 0){
+                result[1] = true;
+            }else{
+                result[1] = false;
+            }
             return result;
         } catch (error) {
             console.log('Cannot buy cart in manager with mongoose: ' + error)
