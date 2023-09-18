@@ -1404,3 +1404,25 @@ Date: 17/9/2023 - Hour: 22:20:38 - Method: GET producs
 Date: 17/9/2023 - Hour: 22:25:01 - Method: Login
 Date: 17/9/2023 - Hour: 22:25:07 - Method: UPDATE a user
 Date: 17/9/2023 - Hour: 22:25:09 - Method: GET producs
+Date: 17/9/2023 - Hour: 22:33:35 - Method: GET producs
+Date: 17/9/2023 - Hour: 22:33:50 - Method: Login
+Date: 17/9/2023 - Hour: 22:33:58 - Method: UPDATE a user
+Date: 17/9/2023 - Hour: 22:34:00 - Method: GET producs
+Date: 17/9/2023 - Hour: 22:34:11 - Method: GET a cart
+Date: 17/9/2023 - Hour: 22:34:11 - Method: GET a cart
+Date: 17/9/2023 - Hour: 22:34:15 - Method: GET producs
+Date: 17/9/2023 - Hour: 22:34:18 - Method: POST product in a cart
+Date: 17/9/2023 - Hour: 22:34:20 - Method: POST product in a cart
+Date: 17/9/2023 - Hour: 22:34:23 - Method: GET a cart
+Date: 17/9/2023 - Hour: 22:34:23 - Method: GET a cart
+Date: 17/9/2023 - Hour: 22:34:25 - Method: BUY a cart
+Date: 17/9/2023 - Hour: 22:34:26 - Method: UPDATE a product
+Date: 17/9/2023 - Hour: 22:34:26 - Method: UPDATE a product
+Date: 17/9/2023 - Hour: 22:34:26 - Method: UPDATE all products in a cart
+Date: 17/9/2023 - Hour: 22:34:26 - Method: GET a user by email
+Date: 17/9/2023 - Hour: 22:34:26 - Method: POST a ticket
+Date: 17/9/2023 - Hour: 22:34:27 - Method: PUT a ticket
+Date: 17/9/2023 - Hour: 22:34:27 - Method: POST a cart
+Date: 17/9/2023 - Hour: 22:34:27 - Method: UPDATE a user
+Date: 17/9/2023 - Hour: 22:34:27 - Method: GET ticket
+Date: 17/9/2023 - Hour: 22:34:42 - Method: GET producs
